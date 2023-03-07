@@ -1,16 +1,21 @@
 *.DS_Store
-bin
-target
+.bin
+.target
 .classpath
 .project
 .settings
-src/main/webapp/META-INF
 .idea
 .cache
 .vsidx
 .editorconfig
 .json
-.cache
 .props
+.suo
+.config
+.dll
+.BuildWithSkipAnalyzers
+.txt
+.pdb
+.packsentinel
 *.iml
 
