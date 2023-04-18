@@ -1,9 +1,19 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using PXLPRO2023Shoppers02.Data;
+using System;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-var connectionString = builder.Configuration.GetConnectionString("AppDbConn");
+var connectionString = builder.Configuration.GetConnectionString("PXLPRO2023Shoppers02DbConn");
+builder.Services.AddDbContext<PXLPRO2023Shoppers02DbContext>(options =>
+{
+	options.UseSqlServer(connectionString);
+});
 
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<PXLPRO2023Shoppers02DbContext>();
 
 var app = builder.Build();
 
@@ -19,11 +29,13 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
 	name: "default",
 	pattern: "{controller=Home}/{action=Index}/{id?}");
+
+SeedData.EnsurePopulated(app);
 
 app.Run();
