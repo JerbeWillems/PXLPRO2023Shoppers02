@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\12101540\\Source\\Repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj": {}
+    "C:\\Users\\12101540\\source\\repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\12101540\\Source\\Repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj": {
+    "C:\\Users\\12101540\\source\\repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\12101540\\Source\\Repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj",
+        "projectUniqueName": "C:\\Users\\12101540\\source\\repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj",
         "projectName": "PXLPRO2023Shoppers02",
-        "projectPath": "C:\\Users\\12101540\\Source\\Repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj",
+        "projectPath": "C:\\Users\\12101540\\source\\repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj",
         "packagesPath": "C:\\Users\\12101540\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\12101540\\Source\\Repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\obj\\",
+        "outputPath": "C:\\Users\\12101540\\source\\repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

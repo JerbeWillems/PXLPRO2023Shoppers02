@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using PXLPRO2023Shoppers02.Models;
 using System;
 
 namespace PXLPRO2023Shoppers02.Data
@@ -10,5 +11,9 @@ namespace PXLPRO2023Shoppers02.Data
         {
 
         }
+        public DbSet<Orders> Orders { get; set; }
+        public DbSet<Products> Product { get; set; }
+        public DbSet<ProductsCategories> ProductCategory { get; set; }
+        public DbSet<OrdersLines> OrdersLines { get; set; }
     }
 }

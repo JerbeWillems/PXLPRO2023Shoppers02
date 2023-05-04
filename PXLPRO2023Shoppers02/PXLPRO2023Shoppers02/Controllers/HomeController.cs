@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PXLPRO2023Shoppers02.Data;
 using PXLPRO2023Shoppers02.Models;
 using System.Diagnostics;
 
@@ -6,11 +7,11 @@ namespace PXLPRO2023Shoppers02.Controllers
 {
 	public class HomeController : Controller
 	{
-		private readonly ILogger<HomeController> _logger;
+        private readonly PXLPRO2023Shoppers02DbContext _context;
 
-		public HomeController(ILogger<HomeController> logger)
+        public HomeController(PXLPRO2023Shoppers02DbContext context)
 		{
-			_logger = logger;
+			_context = context;
 		}
 
 		public IActionResult Index()

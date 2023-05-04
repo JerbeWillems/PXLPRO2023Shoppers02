@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "22ChKT8qcaSQQ8mDhz5SsHYWnzhGqd8BGmxJZ1xHizksdqij3HjI3cLiqnUo0vF9g1ExmyiKOUPkcboxpepjoA==",
+  "dgSpecHash": "V2bdy836y7gttlzG6iTZWu7v3da4soBSP/p4MjS70fbw4tO9n7QWzo8IkFUsLAyWVwWBKkNBo+9aC6GhLGiNQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\12101540\\Source\\Repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj",
+  "projectFilePath": "C:\\Users\\12101540\\source\\repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\12101540\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\12101540\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
