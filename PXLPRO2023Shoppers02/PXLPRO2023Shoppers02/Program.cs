@@ -15,7 +15,14 @@ builder.Services.AddDbContext<PXLPRO2023Shoppers02DbContext>(options =>
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<PXLPRO2023Shoppers02DbContext>();
 
+builder.Services.AddAuthentication().AddFacebook(fbOpt =>
+{
+	fbOpt.AppId = "AppIdCode !!!!!!!!!!!!!!";
+	fbOpt.AppSecret = "AppSecret !!!!!!!!!!!!!!";
+});
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

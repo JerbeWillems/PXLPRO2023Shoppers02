@@ -53,6 +53,22 @@
       "MessagePackAnalyzer/2.1.152": {
         "type": "package"
       },
+      "Microsoft.AspNetCore.Authentication.Facebook/6.0.16": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.14": {
         "type": "package",
         "compile": {
@@ -3743,6 +3759,21 @@
         "messagepackanalyzer.nuspec",
         "tools/install.ps1",
         "tools/uninstall.ps1"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Facebook/6.0.16": {
+      "sha512": "hNKadnleiCdt8Wv09CjH73hZvKzZ1yjSB72vYrKQ2L/LsJC+SB8Qlx6K3o5cnOqoBTRpIE1Dn4PqbJBY8bxKKQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.facebook/6.0.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.Facebook.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.Facebook.xml",
+        "microsoft.aspnetcore.authentication.facebook.6.0.16.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.facebook.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.14": {
@@ -10416,6 +10447,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.AspNetCore.Authentication.Facebook >= 6.0.16",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.14",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.14",
@@ -10424,23 +10456,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\12101540\\.nuget\\packages\\": {},
+    "C:\\Users\\claus\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\12101540\\Source\\Repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj",
+      "projectUniqueName": "C:\\CSharpWeb2\\Project-Web2\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj",
       "projectName": "PXLPRO2023Shoppers02",
-      "projectPath": "C:\\Users\\12101540\\Source\\Repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj",
-      "packagesPath": "C:\\Users\\12101540\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\12101540\\Source\\Repos\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\obj\\",
+      "projectPath": "C:\\CSharpWeb2\\Project-Web2\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02.csproj",
+      "packagesPath": "C:\\Users\\claus\\.nuget\\packages\\",
+      "outputPath": "C:\\CSharpWeb2\\Project-Web2\\PXLPRO2023Shoppers02\\PXLPRO2023Shoppers02\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\12101540\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\claus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10450,8 +10482,9 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Users\\12101540\\.nuget\\packages": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Users\\claus\\OneDrive\\Bureaublad\\Packages": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://packagesource": {}
       },
       "frameworks": {
         "net6.0": {
@@ -10469,6 +10502,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Facebook": {
+            "target": "Package",
+            "version": "[6.0.16, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.14, )"
@@ -10511,7 +10548,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
