@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<PXLPRO2023Shoppers02.Models.ViewModels.CategoryViewModel>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -6,3 +7,24 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+<table>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Categorys.CategoryName
+                </td>
+                <td>
+                    @item.Producten.ProductName
+                </td>
+                <td>
+                    @item.Producten.ProductDescription
+                </td>
+                <td>
+                    @item.Producten.ProductPrice
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

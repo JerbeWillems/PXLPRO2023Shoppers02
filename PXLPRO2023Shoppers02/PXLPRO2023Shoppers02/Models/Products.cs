@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PXLPRO2023Shoppers02.Models
 {
@@ -16,6 +18,11 @@ namespace PXLPRO2023Shoppers02.Models
 
         [Required]
         public double ProductPrice { get; set; }
+
+        public int? CategoryId { get; set; }
+        [ForeignKey("CategoryId")]
+        [ValidateNever]
+        public ProductsCategories? Category { get; set; }
 
 
     }

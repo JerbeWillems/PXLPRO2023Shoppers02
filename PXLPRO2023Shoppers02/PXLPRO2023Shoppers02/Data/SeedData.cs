@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using PXLPRO2023Shoppers02.Models;
 
 namespace PXLPRO2023Shoppers02.Data
 {
@@ -68,7 +69,121 @@ namespace PXLPRO2023Shoppers02.Data
                         throw new Exception(resultUser1.Errors.First().Code);
                     }
                 }
+                if(!_context.ProductCategory.Any())
+                {
+                    foreach (var topic in CategorysOpvullen)
+                    {
+                        _context.ProductCategory.Add(topic);
+                    }
+                    _context.SaveChanges();
+                }
+                if (!_context.Product.Any())
+                {
+                    foreach (var topic in ProductOpvullen)
+                    {
+                        _context.Product.Add(topic);
+                    }
+                    _context.SaveChanges();
+                }                
             }
         }
+        public static List<ProductsCategories> CategorysOpvullen = new List<ProductsCategories>
+        {
+            new ProductsCategories
+            {
+                CategoryName = "Zetel",
+                CategoryDescription = "Een zacht zitvlak voor thuis"
+            },
+            new ProductsCategories
+            {
+                CategoryName = "Stoel",
+                CategoryDescription = "Een hard zitvlak voor thuis"
+            },
+        };
+
+        public static List<Products> ProductOpvullen = new List<Products>
+        {
+            new Products
+            {
+                ProductName = "L Zetel",
+                ProductDescription = "Een zetel voor in de woonkamer",
+                ProductPrice = 50.50,
+                Category = CategorysOpvullen[0]
+            },
+            new Products
+            {
+                ProductName = "XL Zetel",
+                ProductDescription = "Een grote zetel voor in de woonkamer",
+                ProductPrice = 105.99,
+                Category = CategorysOpvullen[0]
+            },
+            new Products
+            {
+                ProductName = "XXL Zetel",
+                ProductDescription = "Een extra grote zetel voor in de woonkamer",
+                ProductPrice = 159.85,
+                Category = CategorysOpvullen[0]
+            },
+            new Products
+            {
+                ProductName = "L Stoel",
+                ProductDescription = "Een stoel voor in de woonkamer",
+                ProductPrice = 25.50,
+                Category = CategorysOpvullen[1]
+            },
+            new Products
+            {
+                ProductName = "XL Stoel",
+                ProductDescription = "Een grote stoel voor in de woonkamer",
+                ProductPrice = 50.25,
+                Category = CategorysOpvullen[1]
+            },
+            new Products
+            {
+                ProductName = "XXL Stoel",
+                ProductDescription = "Een extra grote stoel voor in de woonkamer",
+                ProductPrice = 75.99,
+                Category = CategorysOpvullen[1]
+            }
+            
+            //var products = new Products[2];
+            //products[0] = new Products
+            //{
+            //    ProductName = "XXL Zetel",
+            //    ProductDescription = "Een extra grote zetel voor in de woonkamer",
+            //    ProductPrice = 25.50,
+            //};
+            //products[1] = new Products
+            //{
+            //    ProductName = "Grote Stoel",
+            //    ProductDescription = "Een grote stoel voor buiten in de tuin",
+            //    ProductPrice = 15.50
+            //};
+            //products[2] = new Products
+            //{
+            //    ProductName = "Grote Stoel",
+            //    ProductDescription = "Een grote stoel voor buiten in de tuin",
+            //    ProductPrice = 15.50
+            //};
+            //products[3] = new Products
+            //{
+            //    ProductName = "Grote Stoel",
+            //    ProductDescription = "Een grote stoel voor buiten in de tuin",
+            //    ProductPrice = 15.50
+            //};
+            //products[4] = new Products
+            //{
+            //    ProductName = "Grote Stoel",
+            //    ProductDescription = "Een grote stoel voor buiten in de tuin",
+            //    ProductPrice = 15.50
+            //};
+            //products[5] = new Products
+            //{
+            //    ProductName = "Grote Stoel",
+            //    ProductDescription = "Een grote stoel voor buiten in de tuin",
+            //    ProductPrice = 15.50
+            //};
+            //return products;
+        };
     }
 }

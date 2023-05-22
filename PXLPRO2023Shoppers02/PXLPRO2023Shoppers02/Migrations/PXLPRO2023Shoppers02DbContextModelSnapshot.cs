@@ -279,6 +279,9 @@ namespace PXLPRO2023Shoppers02.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductId"), 1L, 1);
 
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ProductDescription")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -291,6 +294,8 @@ namespace PXLPRO2023Shoppers02.Migrations
                         .HasColumnType("float");
 
                     b.HasKey("ProductId");
+
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Product");
                 });
@@ -311,13 +316,7 @@ namespace PXLPRO2023Shoppers02.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ProductId")
-                        .IsRequired()
-                        .HasColumnType("int");
-
                     b.HasKey("CategoryId");
-
-                    b.HasIndex("ProductId");
 
                     b.ToTable("ProductCategory");
                 });
@@ -384,15 +383,13 @@ namespace PXLPRO2023Shoppers02.Migrations
                     b.Navigation("Order");
                 });
 
-            modelBuilder.Entity("PXLPRO2023Shoppers02.Models.ProductsCategories", b =>
+            modelBuilder.Entity("PXLPRO2023Shoppers02.Models.Products", b =>
                 {
-                    b.HasOne("PXLPRO2023Shoppers02.Models.Products", "Product")
+                    b.HasOne("PXLPRO2023Shoppers02.Models.ProductsCategories", "Category")
                         .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CategoryId");
 
-                    b.Navigation("Product");
+                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }

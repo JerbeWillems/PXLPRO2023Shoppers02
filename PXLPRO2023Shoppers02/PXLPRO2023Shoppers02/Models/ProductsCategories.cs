@@ -15,11 +15,6 @@ namespace PXLPRO2023Shoppers02.Models
 
         [Required]
         public string? CategoryDescription { get; set; }
-
-        [Required]
-        public int?  ProductId { get; set; }
-        [ForeignKey("ProductId")]
-        [ValidateNever]
-        public Products? Product { get; set; }
+        
     }
 }
