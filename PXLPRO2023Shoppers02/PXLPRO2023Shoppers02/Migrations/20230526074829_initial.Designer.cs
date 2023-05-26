@@ -12,7 +12,7 @@ using PXLPRO2023Shoppers02.Data;
 namespace PXLPRO2023Shoppers02.Migrations
 {
     [DbContext(typeof(PXLPRO2023Shoppers02DbContext))]
-    [Migration("20230522084639_initial")]
+    [Migration("20230526074829_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -286,6 +286,9 @@ namespace PXLPRO2023Shoppers02.Migrations
 
                     b.Property<string>("ProductDescription")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProductImage")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductName")

@@ -18,6 +18,7 @@ namespace PXLPRO2023Shoppers02.Models
 
         [Required]
         public double ProductPrice { get; set; }
+        public string? ProductImage { get; set; }
 
         public int? CategoryId { get; set; }
         [ForeignKey("CategoryId")]
