@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PXLPRO2023Shoppers02.Data;
 
@@ -11,9 +12,10 @@ using PXLPRO2023Shoppers02.Data;
 namespace PXLPRO2023Shoppers02.Migrations
 {
     [DbContext(typeof(PXLPRO2023Shoppers02DbContext))]
-    partial class PXLPRO2023Shoppers02DbContextModelSnapshot : ModelSnapshot
+    [Migration("20230525145827_AddProductImage")]
+    partial class AddProductImage
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
