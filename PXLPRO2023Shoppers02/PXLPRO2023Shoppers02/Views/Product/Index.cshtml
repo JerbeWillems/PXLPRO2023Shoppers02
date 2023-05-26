@@ -1,0 +1,44 @@
+﻿@model IEnumerable<PXLPRO2023Shoppers02.Models.ViewModels.CategoryViewModel>
+<div class="container">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h1>Product list</h1>
+        </div>
+        <div class="col-6 text-center">
+            <a asp-controller="Product" asp-action="Create" class="btn btn-secondary">Add product</a>
+        </div>
+    </div>
+</div>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Info</th>
+            <th>Image</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Producten.ProductName
+                </td>
+                <td>
+                    @item.Categorys.CategoryName
+                </td>
+                <td>
+                    @item.Producten.ProductDescription
+                </td>
+                <td>
+                    @item.Producten.ProductImage
+                </td>
+                <td>
+                    @item.Producten.ProductPrice
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

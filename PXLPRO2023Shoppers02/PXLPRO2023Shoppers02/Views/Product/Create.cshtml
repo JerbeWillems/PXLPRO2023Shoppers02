@@ -1,0 +1,36 @@
+﻿@model PXLPRO2023Shoppers02.Models.Products
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Add new product</h2>
+            <hr />
+        </div>
+        <div class="mb-3 row">
+            <label>Name</label>
+            <input asp-for="ProductName" class="form-control" />
+            <span asp-validation-for="ProductName" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row">
+            <label>Category</label>
+            <input asp-for="CategoryId" class="form-control" />
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row">
+            <label>Info</label>
+            <input asp-for="ProductDescription" class="form-control" />
+            <span asp-validation-for="ProductDescription" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row">
+            <label>Image</label>
+            <input asp-for="ProductImage" class="form-control" />
+            <span asp-validation-for="ProductImage" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row">
+            <label>Price</label>
+            <input asp-for="ProductPrice" class="form-control" />
+            <span asp-validation-for="ProductPrice" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Add product</button>
+    </div>
+</form>
