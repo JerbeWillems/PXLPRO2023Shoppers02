@@ -6,11 +6,11 @@ using PXLPRO2023Shoppers02.Data;
 
 namespace PXLPRO2023Shoppers02.Controllers
 {
-    public class ProductController : Controller
+    public class AdminController : Controller
     {
         private readonly PXLPRO2023Shoppers02DbContext _context;
 
-        public ProductController(PXLPRO2023Shoppers02DbContext context)
+        public AdminController(PXLPRO2023Shoppers02DbContext context)
         {
             _context = context;
         }

@@ -19,12 +19,17 @@ namespace PXLPRO2023Shoppers02.Models
         [DisplayName("Info")]
         public string? ProductDescription { get; set; }
 
+        [Required]
         [DisplayName("Image")]
         public string? ProductImage { get; set; }
 
         [Required]
         [DisplayName("Price")]
         public double ProductPrice { get; set; }
+
+        [DisplayName("Stock")]
+        [Required]
+        public int? ProductStock { get; set; }
 
         public int? CategoryId { get; set; }
         [ForeignKey("CategoryId")]

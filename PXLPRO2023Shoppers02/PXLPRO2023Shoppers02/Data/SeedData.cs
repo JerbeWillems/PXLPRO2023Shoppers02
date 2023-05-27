@@ -91,13 +91,13 @@ namespace PXLPRO2023Shoppers02.Data
         {
             new ProductsCategories
             {
-                CategoryName = "Zetel",
-                CategoryDescription = "Een zacht zitvlak voor thuis"
+                CategoryName = "Chair",
+                CategoryDescription = "Seat for 1 person"
             },
             new ProductsCategories
             {
-                CategoryName = "Stoel",
-                CategoryDescription = "Een hard zitvlak voor thuis"
+                CategoryName = "Sofa",
+                CategoryDescription = "Seat for multiple people"
             },
         };
 
@@ -105,45 +105,75 @@ namespace PXLPRO2023Shoppers02.Data
         {
             new Products
             {
-                ProductName = "L Zetel",
-                ProductDescription = "Een zetel voor in de woonkamer",
-                ProductPrice = 50.50,
-                Category = CategorysOpvullen[0]
+                ProductName = "Tsunami Chair",
+                ProductDescription = "This chair is so strong it could withstand any calamity. Even after getting hit by a tsunami it stands still. We've lost the owner thou.",
+                ProductPrice = 69.99,
+                Category = CategorysOpvullen[0],
+                ProductImage = "https://media.gettyimages.com/id/520307488/nl/foto/a-chair-thrown-into-mud-on-the-river-tees-in-middlesbrough-teeside-uk.jpg?s=612x612&w=0&k=20&c=wMfbT1XbOHyxUVwu4sSGzzFPX8CKmglJZ58j9BSxptU=",
+                ProductStock = 420
             },
             new Products
             {
-                ProductName = "XL Zetel",
-                ProductDescription = "Een grote zetel voor in de woonkamer",
+                ProductName = "The Croissant",
+                ProductDescription = "This delicious looking chair isn't delicious at all. Made from the best asbestos by the best carpenters. This chair will bring cardogenics to your home.",
                 ProductPrice = 105.99,
-                Category = CategorysOpvullen[0]
+                Category = CategorysOpvullen[0],
+                ProductImage = "https://cdn.shopify.com/s/files/1/0625/3651/5781/products/AlexaSofa10_800x.jpg?v=1670776692",
+                ProductStock = 420
             },
             new Products
             {
-                ProductName = "XXL Zetel",
-                ProductDescription = "Een extra grote zetel voor in de woonkamer",
+                ProductName = "The hand",
+                ProductDescription = "Ever wanted to be lifted by a giant hand? Well, you can't, but this is close enough. Specially made for people who like fingers up the butt",
                 ProductPrice = 159.85,
-                Category = CategorysOpvullen[0]
+                Category = CategorysOpvullen[0],
+                ProductImage = "https://cdn1.vente-unique.com/thumbnails/product/107/107559/gallery_slider/xl/fauteuil_345499.webp",
+                ProductStock = 420
             },
             new Products
             {
-                ProductName = "L Stoel",
-                ProductDescription = "Een stoel voor in de woonkamer",
+                ProductName = "Ne wolk pie",
+                ProductDescription = "Stylish, cloudish, cheap and not weird at all. I think you're prefer 'The Hand'.",
                 ProductPrice = 25.50,
-                Category = CategorysOpvullen[1]
+                Category = CategorysOpvullen[0],
+                ProductImage = "https://i.pinimg.com/474x/56/d0/47/56d04775f1d75c05ea288277d3e4daee--bean-bag-chairs-bean-chair.jpg",
+                ProductStock = 420
             },
             new Products
             {
-                ProductName = "XL Stoel",
-                ProductDescription = "Een grote stoel voor in de woonkamer",
-                ProductPrice = 50.25,
-                Category = CategorysOpvullen[1]
+                ProductName = "Le cactus",
+                ProductDescription = "Made for people that do not like people. Made from real cacti (which oddly is the plural for the genus cactus), this sofa will make sure guests know they aren't welcome.",
+                ProductPrice = 150.25,
+                Category = CategorysOpvullen[1],
+                ProductImage = "https://lh6.ggpht.com/_hVfE2qcyzXU/TKeg2SEpcfI/AAAAAAAAAoQ/bAZ4Dy7bIcw/s800/sofa-designs-cactus.jpg",
+                ProductStock = 420
             },
             new Products
             {
-                ProductName = "XXL Stoel",
-                ProductDescription = "Een extra grote stoel voor in de woonkamer",
+                ProductName = "Gains for real",
+                ProductDescription = "You bulking bro? Raw eggs EVERYWHERE. Never you'll need to run to the fridge when you're catabolic. Crack one open en slurp it up!.",
                 ProductPrice = 75.99,
-                Category = CategorysOpvullen[1]
+                Category = CategorysOpvullen[1],
+                ProductImage = "https://www.toxel.com/wp-content/uploads/2008/12/3ggsofa.jpg",
+                ProductStock = 420
+            },
+            new Products
+            {
+                ProductName = "Normal sized half sofa",
+                ProductDescription = "Do not be fooled. The picture isn't just half the sofa. It's the whole sofa. You pretty much get what you see.",
+                ProductPrice = 50.25,
+                Category = CategorysOpvullen[1],
+                ProductImage = "https://static.dezeen.com/uploads/2020/11/nota-sofa-basta-furniture-dezeem-showroom_dezeen_2364_col_5.jpg",
+                ProductStock = 420
+            },
+            new Products
+            {
+                ProductName = "Kami",
+                ProductDescription = "Want to know how god feels? Buy this sofa and sit on top of the world. Feel better than Leonardi Di Caprio did after leaving that steaming hot car.",
+                ProductPrice = 75.99,
+                Category = CategorysOpvullen[1],
+                ProductImage = "https://www.saltypeaks.com/wordpress/wp-content/uploads/2012/09/mountain-couch-sofa.jpg",
+                ProductStock = 420
             }
             
             //var products = new Products[2];

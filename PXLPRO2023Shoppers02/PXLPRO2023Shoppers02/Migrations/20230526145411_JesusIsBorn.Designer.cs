@@ -12,8 +12,8 @@ using PXLPRO2023Shoppers02.Data;
 namespace PXLPRO2023Shoppers02.Migrations
 {
     [DbContext(typeof(PXLPRO2023Shoppers02DbContext))]
-    [Migration("20230525145827_AddProductImage")]
-    partial class AddProductImage
+    [Migration("20230526145411_JesusIsBorn")]
+    partial class JesusIsBorn
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -289,6 +289,7 @@ namespace PXLPRO2023Shoppers02.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductImage")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductName")
@@ -297,6 +298,10 @@ namespace PXLPRO2023Shoppers02.Migrations
 
                     b.Property<double>("ProductPrice")
                         .HasColumnType("float");
+
+                    b.Property<int?>("ProductStock")
+                        .IsRequired()
+                        .HasColumnType("int");
 
                     b.HasKey("ProductId");
 
