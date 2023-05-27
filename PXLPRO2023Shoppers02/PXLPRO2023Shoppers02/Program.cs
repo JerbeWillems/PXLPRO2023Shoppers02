@@ -11,7 +11,10 @@ var connectionString = builder.Configuration.GetConnectionString("PXLPRO2023Shop
 builder.Services.AddDbContext<PXLPRO2023Shoppers02DbContext>(options =>
 {
 	options.UseSqlServer(connectionString);
+	options.EnableSensitiveDataLogging(true);
 });
+
+
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<PXLPRO2023Shoppers02DbContext>();
 
@@ -41,6 +44,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
 app.UseAuthentication();
 app.UseAuthorization();
 
