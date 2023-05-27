@@ -28,7 +28,7 @@ namespace PXLPRO2023Shoppers02.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            // loginlogica nog in verwerken
+            
             LoginModel model = new LoginModel();
             return View(model);
         }
@@ -132,7 +132,7 @@ namespace PXLPRO2023Shoppers02.Controllers
                 if (result.Succeeded)
                 {
                     // JUISTE ROL NOG TOEVOEGEN
-                    await _userManager.AddToRoleAsync(user,/* Settings.Roles.UserRole*/"user" );
+                    await _userManager.AddToRoleAsync(user,"client" );
                     await _signInManager.SignInAsync(user, isPersistent: false);
                     return RedirectToAction("Index", "Home");
                 }
