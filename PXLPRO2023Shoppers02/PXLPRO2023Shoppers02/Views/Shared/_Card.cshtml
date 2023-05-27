@@ -1,0 +1,18 @@
+﻿@model PXLPRO2023Shoppers02.Models.ViewModels.CategoryViewModel
+
+<div class="wrapper">
+    <div class="product-img">
+        <img src="@Model.Producten.ProductImage">
+    </div>
+    <div class="product-info">
+        <div class="product-text">
+            <h1>@Model.Producten.ProductName</h1>
+            <h2>@Model.Categorys.CategoryName</h2>
+            <p>@Model.Producten.ProductDescription</p>
+        </div>
+        <div class="product-price">
+            <p>@Model.Producten.ProductPrice<span> €</span></p>
+            <button class="btn-buy">Buy now</button>
+        </div>
+    </div>
+</div>

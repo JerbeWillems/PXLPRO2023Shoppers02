@@ -2,7 +2,7 @@
 
 namespace PXLPRO2023Shoppers02.Controllers
 {
-    public class SofaController : Controller
+    public class ShopController : Controller
     {
         public IActionResult Index()
         {

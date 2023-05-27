@@ -287,6 +287,7 @@ namespace PXLPRO2023Shoppers02.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductImage")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductName")
@@ -295,6 +296,10 @@ namespace PXLPRO2023Shoppers02.Migrations
 
                     b.Property<double>("ProductPrice")
                         .HasColumnType("float");
+
+                    b.Property<int?>("ProductStock")
+                        .IsRequired()
+                        .HasColumnType("int");
 
                     b.HasKey("ProductId");
 
