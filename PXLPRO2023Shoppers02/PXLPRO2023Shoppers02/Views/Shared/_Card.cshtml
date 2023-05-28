@@ -12,7 +12,7 @@
         </div>
         <div class="product-price">
             <p>@Model.Producten.ProductPrice<span> €</span></p>
-             <form asp-controller="Home" asp-action="Detail" asp-route-productId="@Model.Producten.ProductId" method="post">
+             <form asp-controller="Shop" asp-action="Detail" asp-route-productId="@Model.Producten.ProductId" method="post">
                 <button type="submit" class="btn-buy">Buy now</button>
             </form>
         </div>
