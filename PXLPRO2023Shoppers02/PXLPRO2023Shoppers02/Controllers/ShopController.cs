@@ -8,5 +8,9 @@ namespace PXLPRO2023Shoppers02.Controllers
         {
             return View();
         }
+        public IActionResult WinkelKar()
+        {
+            return View();
+        }
     }
 }
