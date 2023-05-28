@@ -1,4 +1,10 @@
 ﻿@model IEnumerable<PXLPRO2023Shoppers02.Models.ViewModels.CategoryViewModel>
 
-@Html.Partial("_Card")
+<link href="~/css/_Card.css" rel="stylesheet" />
+<div class="FlexThisShit">
+    @foreach (var item in Model)
+    {
+        Html.RenderPartial("_Card", item);
+    }
+</div>
 

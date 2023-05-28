@@ -16,7 +16,7 @@ namespace PXLPRO2023Shoppers02.Controllers
 			_context = context;
 		}
 
-		public IActionResult Index(int productId)
+		public IActionResult Index()
 		{
 			List<Products> products = _context.Product.ToList();
 			List<ProductsCategories> categorys = _context.ProductCategory.ToList();
@@ -36,29 +36,6 @@ namespace PXLPRO2023Shoppers02.Controllers
             return View(overzicht);
 		}
 
-		public IActionResult Detail(int productId)
-		{
-            var product = _context.Product.FirstOrDefault(p => p.ProductId == productId);
-            if (product == null)
-            {
-                // Handle the case where the product is not found
-                return NotFound();
-            }
-            List<ProductsCategories> categories = _context.ProductCategory.ToList();
-            var category = categories.FirstOrDefault(c => c.CategoryId == product.CategoryId);
-            if (category == null)
-            {
-                // Handle the case where the category is not found
-                return NotFound();
-            }
-
-            var model = new CategoryViewModel
-            {
-                Categorys = category,
-                Producten = product
-            };
-            return View(model);
-        }
 
 		public IActionResult Privacy()
 		{

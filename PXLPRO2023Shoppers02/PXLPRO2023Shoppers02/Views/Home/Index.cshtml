@@ -2,8 +2,6 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-<link href="~/css/_Card.css" rel="stylesheet" />
-
 <div class="text-center">
     <h1 class="display-4 bg-secondary" style="margin:40px;padding:40px;color:white" >Atelier Barok</h1>
     <h2>Comfort has never been so Barok</h2>
@@ -35,11 +33,5 @@
     <br />
     <p>We deliver our furniture in one piece. No confusing build-yourself-furniture pretentiously called "Javlafittytryne"</p>
     <br />
-</div>
-<div class="FlexThisShit">
-    @foreach (var item in Model)
-    {
-        Html.RenderPartial("_Card", item);
-    }
 </div>
         

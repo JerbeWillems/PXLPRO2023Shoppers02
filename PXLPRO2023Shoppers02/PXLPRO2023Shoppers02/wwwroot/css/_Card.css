@@ -11,7 +11,7 @@
     border: 1px solid black;
     background: slategray;
     width: 600px;
-    height 420px;
+    height: 420px;
     display: flex;
     flex-direction: row;
     align-content: space-between;
