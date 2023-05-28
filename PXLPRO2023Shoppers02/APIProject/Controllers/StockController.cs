@@ -43,6 +43,8 @@ namespace APIProject.Controllers
         {
             Products product = new Products
             {
+                CategoryId = model.CategoryId,
+                ProductDescription = model.ProductDescription,
                 ProductName = model.ProductName,
                 ProductPrice = model.ProductPrice,
                 ProductStock = model.ProductStock,
@@ -65,6 +67,8 @@ namespace APIProject.Controllers
                 return NotFound();
             }
             // give the new values to our product
+            product.CategoryId = model.CategoryId;
+            product.ProductDescription = model.ProductDescription;
             product.ProductName = model.ProductName;
             product.ProductPrice = model.ProductPrice;
             product.ProductStock = model.ProductStock;
