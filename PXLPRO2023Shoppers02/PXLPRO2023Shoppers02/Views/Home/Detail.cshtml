@@ -1,0 +1,59 @@
+﻿@model PXLPRO2023Shoppers02.Models.ViewModels.CategoryViewModel
+
+<form method="post">
+    <div class="card shadow border-0 mt-4">
+        <div class="card-header bg-secondary text-light py-4 p-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="text-white text-uppercase">@Model.Producten.ProductName</h2>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="py-3">
+                <div class="row">
+                    <div class="col-12 col-lg-6 offset-lg-1">
+                        <div class="col-12 col-md-6 pb-4">
+                            <span class="badge">@Model.Categorys.CategoryName</span>
+                        </div>                        
+                        <div class="row text-center ps-2">
+                            <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
+                                <div class="text-dark text-opacity-50 fw-semibold">Price</div>
+                        </div>
+                        <div class="row text-center ps-2">
+                            <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
+                                <div>@Model.Producten.ProductPrice</div>
+                        </div>
+                        <div class="row pl-2 my-3">
+                                    <p class="text-secondary lh-sm">@Model.Producten.ProductDescription</p>
+                        </div>
+                        <div class="row pl-2 mb-3">
+                            <div class="col-md-4">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text bg-primary text-white border-0 fw-semibold"
+                                          id="inputGroup-sizing-default">
+                                        Count
+                                    </span>
+                                    <input type="number" value="1" class="form-control text-start"
+                                           aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 pb-1">
+                                <button type="submit" disabled
+                                        class="btn btn-primary w-100 py-2 text-uppercase">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 offset-lg-1 text-center mb-3">
+                        <img src="@Model.Producten.ProductImage" width="100%" class="rounded" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

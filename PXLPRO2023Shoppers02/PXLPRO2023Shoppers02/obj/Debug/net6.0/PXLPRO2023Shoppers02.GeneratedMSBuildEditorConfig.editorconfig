@@ -8,73 +8,77 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PXLPRO2023Shoppers02
 build_property.RootNamespace = PXLPRO2023Shoppers02
-build_property.ProjectDir = C:\Users\12101540\source\repos\PXLPRO2023Shoppers02\PXLPRO2023Shoppers02\PXLPRO2023Shoppers02\
+build_property.ProjectDir = C:\PXLPRO2023Shoppers02\PXLPRO2023Shoppers02\PXLPRO2023Shoppers02\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\12101540\source\repos\PXLPRO2023Shoppers02\PXLPRO2023Shoppers02\PXLPRO2023Shoppers02
+build_property.MSBuildProjectDirectory = C:\PXLPRO2023Shoppers02\PXLPRO2023Shoppers02\PXLPRO2023Shoppers02
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Account/AccessDenied.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Account/FacebookResponse.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Account/FacebookResponse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGYWNlYm9va1Jlc3BvbnNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Account/Login.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Account/Register.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Admin/Create.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Admin/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Admin/Index.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Home/Index.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Home/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Home/Privacy.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Shared/Error.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Shared/_Card.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Shared/_Card.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Shared/_partialIdentity.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Shared/_partialIdentity.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9wYXJ0aWFsSWRlbnRpdHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Shop/Index.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Shop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/_ViewImports.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/_ViewStart.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/12101540/source/repos/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Shared/_Layout.cshtml]
+[C:/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9jwsx7kkr2
