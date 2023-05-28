@@ -12,13 +12,8 @@ using PXLPRO2023Shoppers02.Data;
 namespace PXLPRO2023Shoppers02.Migrations
 {
     [DbContext(typeof(PXLPRO2023Shoppers02DbContext))]
-<<<<<<<< HEAD:PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Migrations/20230526074829_initial.Designer.cs
-    [Migration("20230526074829_initial")]
+    [Migration("20230527154219_initial")]
     partial class initial
-========
-    [Migration("20230526145411_JesusIsBorn")]
-    partial class JesusIsBorn
->>>>>>>> 4d330823daafbf578bfec26cb5b4bea0accbda6f:PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Migrations/20230526145411_JesusIsBorn.Designer.cs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -294,10 +289,7 @@ namespace PXLPRO2023Shoppers02.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductImage")
-<<<<<<<< HEAD:PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Migrations/20230526074829_initial.Designer.cs
-========
                         .IsRequired()
->>>>>>>> 4d330823daafbf578bfec26cb5b4bea0accbda6f:PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Migrations/20230526145411_JesusIsBorn.Designer.cs
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductName")

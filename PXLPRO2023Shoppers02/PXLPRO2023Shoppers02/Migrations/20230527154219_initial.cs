@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace PXLPRO2023Shoppers02.Migrations
 {
-    public partial class JesusIsBorn : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -214,11 +214,7 @@ namespace PXLPRO2023Shoppers02.Migrations
                     ProductDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ProductImage = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ProductPrice = table.Column<double>(type: "float", nullable: false),
-<<<<<<<< HEAD:PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Migrations/20230526074829_initial.cs
-                    ProductImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
-========
                     ProductStock = table.Column<int>(type: "int", nullable: false),
->>>>>>>> 4d330823daafbf578bfec26cb5b4bea0accbda6f:PXLPRO2023Shoppers02/PXLPRO2023Shoppers02/Migrations/20230526145411_JesusIsBorn.cs
                     CategoryId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
