@@ -12,14 +12,14 @@ using PXLPRO2023Shoppers02.Data;
 namespace PXLPRO2023Shoppers02.Migrations
 {
     [DbContext(typeof(PXLPRO2023Shoppers02DbContext))]
-    [Migration("20230526145411_JesusIsBorn")]
-    partial class JesusIsBorn
+    [Migration("20230529165951_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.14")
+                .HasAnnotation("ProductVersion", "6.0.16")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);

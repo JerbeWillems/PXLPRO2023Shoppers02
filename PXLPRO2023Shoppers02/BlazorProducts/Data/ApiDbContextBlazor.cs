@@ -10,10 +10,10 @@ namespace BlazorProducts.Data
         {
 
         }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<Product> Product { get; set; }
-        public DbSet<ProductCategory> ProductCategory { get; set; }
-        public DbSet<OrderLine> OrdersLines { get; set; }
+        public DbSet<Orders> Orders { get; set; }
+        public DbSet<Products> Product { get; set; }
+        public DbSet<ProductsCategories> ProductCategory { get; set; }
+        public DbSet<OrdersLines> OrdersLines { get; set; }
         public DbSet<UserInfoModel> UserInfo { get; set; }
 
 

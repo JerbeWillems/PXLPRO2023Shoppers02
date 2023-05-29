@@ -13,12 +13,12 @@ namespace BlazorProducts.Services
             _context = apiDbContext;
         }
 
-        public async Task<List<Product>> GetAllProducts()
+        public async Task<List<Products>> GetAllProducts()
         {
             return await _context.Product.ToListAsync();
 
         }
-        public async Task<bool> AddNewProduct(Product product)
+        public async Task<bool> AddNewProduct(Products product)
         {
             await _context.Product.AddAsync(product);
             await _context.SaveChangesAsync();
