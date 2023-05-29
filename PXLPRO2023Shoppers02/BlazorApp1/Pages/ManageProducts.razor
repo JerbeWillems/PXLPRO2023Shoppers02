@@ -1,0 +1,125 @@
+﻿@page "/manageproducts"
+@using BlazorApp1.Data
+@using PXLPRO2023Shoppers02.Models;
+@inject ProductService ProductsService
+@inject IJSRuntime JSRuntime
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Category</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in products)
+        {
+            <tr>
+                <td>@product.ProductId</td>
+                <td>@product.ProductName</td>
+                <td>@product.ProductDescription</td>
+                <td><img src="@product.ProductImage" alt="Product Image" style="max-width: 100px; max-height: 100px;" /></td>
+                <td>@product.ProductPrice</td>
+                <td>@product.ProductStock</td>
+                <td>@product.Category?.CategoryName</td>
+                <td>
+                    <button class="btn btn-primary" @onclick="() => EditProduct(product.ProductId)">Edit</button>
+                    <button class="btn btn-danger" @onclick="() => DeleteProduct(product.ProductId)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button class="btn btn-success" @onclick="CreateProduct">Create New Product</button>
+
+<div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addProductModalLabel">Add New Product</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="productName">Name</label>
+                        <input type="text" class="form-control" id="productName" @bind="@newProduct.ProductName" />
+                    </div>
+                    <div class="form-group">
+                        <label for="productDescription">Description</label>
+                        <input type="text" class="form-control" id="productDescription" @bind="@newProduct.ProductDescription" />
+                    </div>
+                    <div class="form-group">
+                        <label for="productImage">Image URL</label>
+                        <input type="text" class="form-control" id="productImage" @bind="@newProduct.ProductImage" />
+                    </div>
+                    <div class="form-group">
+                        <label for="productPrice">Price</label>
+                        <input type="number" class="form-control" id="productPrice" step="0.01" @bind="@newProduct.ProductPrice" />
+                    </div>
+                    <div class="form-group">
+                        <label for="productStock">Stock</label>
+                        <input type="number" class="form-control" id="productStock" @bind="@newProduct.ProductStock" />
+                    </div>
+                    <div class="form-group">
+                        <label for="productCategory">Category</label>
+                        <input type="number" class="form-control" id="productCategory" @bind="@newProduct.CategoryId" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" @onclick="AddProduct">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    List<Products> products;
+    Products newProduct = new Products();
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await ProductsService.GetAllProducts();
+    }
+
+    private async Task CreateProduct()
+    {
+        newProduct = new Products();
+        await JSRuntime.InvokeVoidAsync("$('#addProductModal').modal", "show");
+    }
+
+    private async Task AddProduct()
+    {
+        bool result = await ProductsService.CreateProduct(newProduct);
+        if (result)
+        {
+            products = await ProductsService.GetAllProducts();
+            await JSRuntime.InvokeVoidAsync("$('#addProductModal').modal", "hide");
+            newProduct = new Products();
+        }
+    }
+
+    private async Task EditProduct(int productId)
+    {
+        // Implement your logic to navigate to the edit product page or display a modal dialog for editing the product with the given productId.
+    }
+
+    private async Task DeleteProduct(int productId)
+    {
+        bool result = await ProductsService.DeleteProduct(productId);
+        if (result)
+        {
+            products = await ProductsService.GetAllProducts();
+        }
+    }
+}

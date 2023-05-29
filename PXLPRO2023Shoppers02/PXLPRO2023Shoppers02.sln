@@ -5,9 +5,9 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PXLPRO2023Shoppers02", "PXLPRO2023Shoppers02\PXLPRO2023Shoppers02.csproj", "{F45FADC0-C82A-4112-B4FE-5F10C0626B42}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorProducts", "BlazorProducts\BlazorProducts.csproj", "{A09EAA1E-2B0A-4CCA-80C7-ADF03AF5A40F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIProject", "APIProject\APIProject.csproj", "{EE117BE1-D340-43AD-B642-0844B1C0980A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIProject", "APIProject\APIProject.csproj", "{EE117BE1-D340-43AD-B642-0844B1C0980A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp1", "BlazorApp1\BlazorApp1.csproj", "{B2177BE4-7B52-4250-91D9-510EEC256D7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{F45FADC0-C82A-4112-B4FE-5F10C0626B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F45FADC0-C82A-4112-B4FE-5F10C0626B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F45FADC0-C82A-4112-B4FE-5F10C0626B42}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A09EAA1E-2B0A-4CCA-80C7-ADF03AF5A40F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A09EAA1E-2B0A-4CCA-80C7-ADF03AF5A40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A09EAA1E-2B0A-4CCA-80C7-ADF03AF5A40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A09EAA1E-2B0A-4CCA-80C7-ADF03AF5A40F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EE117BE1-D340-43AD-B642-0844B1C0980A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EE117BE1-D340-43AD-B642-0844B1C0980A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE117BE1-D340-43AD-B642-0844B1C0980A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE117BE1-D340-43AD-B642-0844B1C0980A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2177BE4-7B52-4250-91D9-510EEC256D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2177BE4-7B52-4250-91D9-510EEC256D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2177BE4-7B52-4250-91D9-510EEC256D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2177BE4-7B52-4250-91D9-510EEC256D7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
